@@ -1,0 +1,37 @@
+@import '../sass/block/header';
+@import '../sass/block/services';
+@import '../sass/block/about-us';
+@import '../sass/block/all-services';
+@import '../sass/block/video';
+@import '../sass/block/subcribe';
+@import '../sass/block/footer';
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.header {
+ background-image: url(../img/first-bg.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+background-position: center center;
+}
+.btn {
+  background: #4985FF;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 14px 36px;
+  transition: 0.5s all;
+  &:hover {
+    box-shadow: 0px 2px 12px 2px #4985FF
+  }
+}
+
+@import '../sass/base/media';
