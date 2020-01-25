@@ -1,0 +1,76 @@
+.about-us {
+  background: #F6F6F8;
+  padding: 100px 0px 70px 0px;
+  margin-top: 105px;
+  &__hr {
+    border: 1px solid #E0E0E0;
+    margin-top: 90px;
+  }
+  &__block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 1;
+  }
+  &__text {
+    &__title {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 53px;
+      color: #323232;
+    }
+    &__subtitle {
+      margin-top: 40px;
+      p {
+        width: 489px;
+        font-size: 16px;
+        line-height: 25px;
+        color: #999999;
+      }
+      &-more {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        color: #4985FF;
+      }
+    }
+  }
+  &__hr {
+    color: #E0E0E0;
+  }
+  &__img {
+    margin-top: -50px;
+  }
+}
+.score {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  &__card {
+    display: flex;
+    flex-direction: column;
+    &__wrap {
+      display: flex;
+    }
+    &__img {
+      margin-right: 20px;
+    }
+    &__title {
+      font-size: 36px;
+      line-height: 53px;
+      color: #000000;
+    }
+    &__more {
+      margin-top: 10px;
+      a {
+        font-size: 16px;
+        line-height: 25px;
+        color: #999999;
+        text-decoration: none;
+      }
+    }
+  }
+}

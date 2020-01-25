@@ -3,6 +3,17 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  &__button {
+    background: #4985FF;
+    margin-top: 50px;
+  }
+  &__product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
   &__title {
     margin-top: 110px;
     font-weight: bold;
@@ -21,6 +32,38 @@
     p {
       width: 730px;
       text-align: center;
+    }
+  }
+  &__card {
+    margin-right: 40px;
+    margin-top: 70px;
+    display: flex;
+    &:last-child {
+      margin-right: 0;
+    }
+    &__img {
+      margin-top: -25px;
+      img {
+      }
+    }
+    &__text {
+      margin-left: 18px;
+    }
+
+    &__title {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      color: #000000;
+    }
+    &__subtitle {
+      margin-top: 12px;
+      font-size: 14px;
+      line-height: 22px;
+      color: #999999;
+      p {
+        width: 222px;
+      }
     }
   }
 }
