@@ -33,6 +33,51 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  &__menu {
+    display: none;
+    &__btn {
+      background: #fff;
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      position: relative;
+      span {
+        position: absolute;
+        height: 2px;
+        width: 25px;
+        background: rgb(36, 36, 36);
+        top: 50%;
+        margin-top: -1px;
+        left: 50%;
+        margin-left: -12.5px;
+        &::before {
+          position: absolute;
+          height: 2px;
+          width: 25px;
+          background: rgb(36, 36, 36);
+          top: 50%;
+          margin-top: -1px;
+          left: 50%;
+          margin-left: -12.5px;
+          content: '';
+          transform: translateY(7px);
+        }
+        &:after {
+          position: absolute;
+          height: 2px;
+          width: 25px;
+          background: rgb(36, 36, 36);
+          top: 50%;
+          margin-top: -1px;
+          left: 50%;
+          margin-left: -12.5px;
+          content: '';
+          transform: translateY(-7px);
+        }
+      }
+    }
+  }
   &__list {
     list-style-type: none;
     display: flex;

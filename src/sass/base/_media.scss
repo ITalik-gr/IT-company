@@ -388,4 +388,14 @@
       }
     }
   }
+  .nav {
+    justify-content: flex-end;
+    padding-right: 30px;
+    &__list {
+      display: none;
+    }
+    &__menu {
+      display: block;
+    }
+  }
 }
