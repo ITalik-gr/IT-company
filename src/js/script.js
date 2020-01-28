@@ -1,8 +1,1 @@
-$(document).bind( 'mousewheel', function (e) { 
-    var nt = $(document.body).scrollTop()-(e.deltaY*e.deltaFactor*100); 
-    e.preventDefault(); 
-    e.stopPropagation(); 
-    $(document.body).stop().animate( { 
-         scrollTop : nt 
-     } , 500 , 'easeInOutCubic' );  
-} )
+$('a[href*="#"]').on("click",function(t){t.preventDefault(),$("html, body").animate({scrollTop:$($(this).attr("href")).offset().top},700,"linear")})
